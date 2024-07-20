@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div[data-swapmode="buy"] button[data-swapkey="buy"],
+div[data-swapmode="sell"] button[data-swapkey="sell"] {
+  @apply cursor-default !important;
+}
+div[data-swapmode="buy"] button[data-swapkey="sell"],
+div[data-swapmode="sell"] button[data-swapkey="buy"] {
+  @apply bg-[#2a2b32] text-white hover:bg-[#494a56] !important;
+}
